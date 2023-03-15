@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="324dp"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101">
+
+        <TextView
+            android:id="@+id/ingresarUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero 1:" />
+
+        <TextView
+            android:id="@+id/numeroUno"
+            android:layout_width="97dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/ingresarDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero 2: " />
+
+        <TextView
+            android:id="@+id/numeroDos"
+            android:layout_width="97dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="362dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/botonPotencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potencia" />
+
+        <Button
+            android:id="@+id/botonFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fibonacci" />
+
+        <Button
+            android:id="@+id/botonMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar" />
+    </TableRow>
+
+    <FrameLayout
+        android:layout_width="192dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855">
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="118dp"
+            android:layout_height="53dp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
